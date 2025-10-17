@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tocho Bandera México</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-principal: #005b96;
+      --color-secundario: #d53b3e;
+      --color-fondo: #eaeaea;
+      --color-texto: #333;
+      --color-acento: #FF6347;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--color-principal);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--color-secundario);
+      padding: 10px 0;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--color-acento);
+      color: white;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      flex-grow: 1;
+    }
+
+    section {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    section h2 {
+      color: var(--color-principal);
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      background-color: var(--color-principal);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--color-secundario);
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 20px;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tocho Bandera México</h1>
+  </header>
+
+  <nav>
+    <a href="#introduccion">Inicio</a>
+    <a href="#que-es">¿Qué es?</a>
+    <a href="#reglas">Reglas</a>
+    <a href="#liga">Ligas & Eventos</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="introduccion">
+      <h2>Introducción al Tocho Bandera</h2>
+      <p>
+        El **tocho bandera** es una modalidad deportiva de fútbol americano sin contacto, donde el objetivo es quitarle la bandera al adversario en lugar de placarlo. Este deporte, accesible y dinámico, ha ido ganando popularidad en México.
+      </p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjtPTsFp0xKaq2lNLOmCs1Xg90hgWcyzX9w&s" alt="Jugadores de tocho bandera">
+    </section>
+
+    <section id="que-es">
+      <h2>¿Qué es Tocho Bandera?</h2>
+      <p>
+        El tocho bandera se basa en el trabajo en equipo, las estrategias rápidas y la habilidad para pasar y recibir el balón sin la necesidad de contacto físico directo.
+      </p>
+      <ul>
+        <li>Formato 5 vs 5 mixto</li>
+        <li>Formato 7 vs 7 competitivo</li>
+        <li>Ramas femenil, varonil y mixtas</li>
+      </ul>
+      <img src="https://oem.com.mx/elsoldetoluca/img/13696827/1710933040/BASE_LANDSCAPE/480/image.webp" alt="Lucha de banderas">
+    </section>
+
+    <section id="reglas">
+      <h2>Reglas básicas</h2>
+      <ul>
+        <li>No hay contacto físico ni placajes.</li>
+        <li>Para detener al portador, se debe quitar una de sus banderas.</li>
+        <li>El campo es más pequeño que el del fútbol americano tradicional.</li>
+      </ul>
+      <table>
+        <thead>
+          <tr><th>Rol</th><th>Descripción</th><th>Responsabilidad</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Quarterback</td><td>Pasa el balón</td><td>Dirige jugada ofensiva</td></tr>
+          <tr><td>Wide Receiver</td><td>Recibe los pases</td><td>Busca zona de anotación</td></tr>
+          <tr><td>Defensor</td><td>Quita bandera</td><td>Impide avanzar al balón</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="liga">
+      <h2>Ligas & Eventos</h2>
+      <p>
+        En México, el Tocho Bandera ha ganado terreno, con ligas como "TochitoBandera.com" impulsando la organización de eventos a nivel nacional.
+      </p>
+      <ul>
+        <li>Campeonato Nacional — Abril 2025</li>
+        <li>Competencia estatal — Julio 2025</li>
+        <li>Clínicas y talleres en escuelas</li>
+      </ul>
+      <img src="https://blog.udlap.mx/wp-content/uploads/2014/11/tocho-2.jpg" alt="Competencia de tocho bandera">
+    </section>
+
+    <section id="beneficios">
+      <h2>Beneficios de practicarlo</h2>
+      <ul>
+        <li>Mejora la agilidad y la rapidez</li>
+        <li>Desarrolla la estrategia y el trabajo en equipo</li>
+        <li>Es una actividad física sin contacto fuerte</li>
+        <li>Es un deporte inclusivo</li>
+      </ul>
+      <p>
+        Además, hay un fuerte movimiento para que el Tocho Bandera sea parte de los Juegos Olímpicos en 2028.
+      </p>
+      <img src="https://www.competize.com/blog/wp-content/uploads/2023/02/futbol-bandera-como-jugar-reglas-750x523.jpeg" alt="Jugadores activos">
+    </section>
+
+    <section id="contacto">
+      <h2>¿Quieres unirte?</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+        <button type="button" class="btn" onclick="abrirModal()">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="modal"
